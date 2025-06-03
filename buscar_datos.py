@@ -36,7 +36,7 @@ def agregar_datos():
         
          
 def menu():
-    print("1-Buscar datos")
+    print("1-Crear archivo con datos")
     print("2-Agregar Productos")
     print("0-Salir")
     opc = int(input("Ingresar opcion: "))
