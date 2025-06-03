@@ -1,6 +1,6 @@
 # Instalar paquetes
 ```
-pip install -r requirements.txt</p>
+pip install -r requirements.txt
 ```
 
 # Web Scraping
