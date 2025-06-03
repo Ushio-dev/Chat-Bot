@@ -1,3 +1,3 @@
-Instalar paquetes 
+<h1>Instalar paquetes</h1>
 <br>
-pip install -r requirements.txt
+<p>pip install -r requirements.txt</p>
