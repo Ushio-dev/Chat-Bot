@@ -13,10 +13,10 @@ def buscar_datos(nombre_archivo="datos.txt"):
 
     soup = BeautifulSoup(datos_obtenido.text, "html.parser")
 
-    primer_li = soup.find_all("li", class_="ui-search-layout__item")
+    li_productos = soup.find_all("li", class_="ui-search-layout__item") # li es la etiqueta que contiene los productos
 
     with open(f"./{nombre_archivo}", "w", encoding="utf-8") as file:
-        for li in primer_li:
+        for li in li_productos:
             titulo = li.find("a", class_="poly-component__title").text.strip()
             precio = li.find("span", class_="andes-money-amount__fraction").text.strip()
             link = li.find("a", class_="poly-component__title").get("href")
