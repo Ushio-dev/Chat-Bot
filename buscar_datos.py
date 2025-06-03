@@ -26,7 +26,7 @@ def buscar_datos(nombre_archivo="datos.txt"):
             
             
 def agregar_datos():
-    buscar_datos("nuevos.txt")    
+    buscar_datos("./nuevos.txt")    
     
     with open("./datos.txt", "a", encoding="utf-8") as archivo_datos, open("./nuevos.txt", "r", encoding="utf-8") as archivos_nuevos:
         for linea in archivos_nuevos.readlines():
@@ -38,7 +38,7 @@ def agregar_datos():
 def menu():
     print("1-Buscar datos")
     print("2-Agregar Productos")
-    print("3-Salir")
+    print("0-Salir")
     opc = int(input("Ingresar opcion: "))
     return opc
     
