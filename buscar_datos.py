@@ -19,23 +19,32 @@ datos_empresa = {
   "productos": [],
   "empleados": [
     {
-      "nombre": "Lucía Fernandez",
-      "telefono": "+54 11 6543-2100"
+      "nombre": "Lucía Fernández",
+      "telefono": "+54 11 6543-2100",
+      "horario": "09:00 - 15:00",
+      "dias_trabajo": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
     },
     {
-      "nombre": "Carlos Gomez",
-      "telefono": "+54 11 6789-1234"
+      "nombre": "Carlos Gómez",
+      "telefono": "+54 11 6789-1234",
+      "horario": "12:00 - 18:00",
+      "dias_trabajo": ["Lunes", "Miércoles", "Viernes", "Sábado"]
     },
     {
       "nombre": "Mariana Torres",
-      "telefono": "+54 11 6123-4567"
+      "telefono": "+54 11 6123-4567",
+      "horario": "10:00 - 16:00",
+      "dias_trabajo": ["Martes", "Jueves", "Viernes", "Sábado"]
     },
     {
-      "nombre": "Diego Ramirez",
-      "telefono": "+54 11 6345-7891"
+      "nombre": "Diego Ramírez",
+      "telefono": "+54 11 6345-7891",
+      "horario": "13:00 - 18:00",
+      "dias_trabajo": ["Lunes", "Martes", "Miércoles", "Jueves"]
     }
   ]
 }
+
 
    
     
@@ -76,7 +85,9 @@ def nuevos_productos():
     
     with open("datos.json", "r+",  encoding="utf-8") as file:
         datos = json.load(file)
-        datos["productos"].append(productos)
+        
+        for producto in productos:
+            datos["productos"].append(producto)
         
         file.seek(0)  # Mover el cursor al inicio del archivo
         json.dump(datos, file)   

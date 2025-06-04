@@ -1,4 +1,4 @@
 /.env
 datos.txt
 __pycache__/
-.json
+datos.json
