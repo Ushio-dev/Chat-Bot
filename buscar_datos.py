@@ -19,13 +19,13 @@ datos_empresa = {
   "productos": [],
   "empleados": [
     {
-      "nombre": "Lucía Fernández",
+      "nombre": "Lucia Fernandez",
       "telefono": "+54 11 6543-2100",
       "horario": "09:00 - 15:00",
       "dias_trabajo": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
     },
     {
-      "nombre": "Carlos Gómez",
+      "nombre": "Carlos Gomez",
       "telefono": "+54 11 6789-1234",
       "horario": "12:00 - 18:00",
       "dias_trabajo": ["Lunes", "Miércoles", "Viernes", "Sábado"]
@@ -37,7 +37,7 @@ datos_empresa = {
       "dias_trabajo": ["Martes", "Jueves", "Viernes", "Sábado"]
     },
     {
-      "nombre": "Diego Ramírez",
+      "nombre": "Diego Ramirez",
       "telefono": "+54 11 6345-7891",
       "horario": "13:00 - 18:00",
       "dias_trabajo": ["Lunes", "Martes", "Miércoles", "Jueves"]
